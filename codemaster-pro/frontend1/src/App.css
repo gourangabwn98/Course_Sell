@@ -1,0 +1,38 @@
+/* app.css - Fixes & Enhancements */
+:root {
+  --primary: #00d4aa;
+}
+
+.btn {
+  /* Force button styles */
+  background-color: var(--primary) !important;
+  color: white !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+.btn:hover {
+  background-color: #009d7e !important;
+  transform: translateY(-1px) !important;
+}
+
+.card {
+  /* Ensure cards render */
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  padding: 1rem !important;
+}
+
+.dark .card {
+  background: #1f2937 !important;
+}
+
+/* Fix button pointer-events */
+button,
+a[href] {
+  pointer-events: auto !important;
+}
