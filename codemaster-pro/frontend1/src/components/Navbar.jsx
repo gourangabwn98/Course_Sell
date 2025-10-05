@@ -35,7 +35,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           to="/dsa"
           className="text-gray-300 hover:text-[#00d4aa] transition-colors"
         >
-          DSA
+          Contest
         </Link>
         <Link
           to="/about"
