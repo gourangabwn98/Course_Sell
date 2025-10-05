@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register"; // New
+import Enroll from "./components/Enroll";
+import CodeContest from "./pages/CodeContest";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -30,6 +32,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/enroll" element={<Enroll />} />
+        <Route path="/codecontest/:id" element={<CodeContest />} />
         <Route
           path="/login"
           element={user ? <Navigate to="/dashboard" /> : <Login />}
